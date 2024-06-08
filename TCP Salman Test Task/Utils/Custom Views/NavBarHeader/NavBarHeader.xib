@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Outfit-Regular.ttf">
+            <string>Outfit-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NkL-J1-sAy" customClass="NavBarHeader" customModule="TCP_Salman_Test_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjJ-1G-PpL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfj-Zt-U6K">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="VuG-l5-ogU"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                            <state key="normal" image="left-arrow"/>
+                            <connections>
+                                <action selector="leftBtnPressed:" destination="NkL-J1-sAy" eventType="touchUpInside" id="vjW-i3-Dx0"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-SB-BhV" customClass="Label_Navigation" customModule="TCP_Salman_Test_Task" customModuleProvider="target">
+                            <rect key="frame" x="139" y="12" width="97.5" height="33"/>
+                            <fontDescription key="fontDescription" name="Outfit-Regular" family="Outfit" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeG-c5-fay">
+                            <rect key="frame" x="315" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="wFV-S6-fpU"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                            <state key="normal" image="right-arrow"/>
+                            <state key="highlighted" image="ic_more_white"/>
+                            <connections>
+                                <action selector="rightBtnPressed:" destination="NkL-J1-sAy" eventType="touchUpInside" id="eWz-DN-L9y"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" red="0.32156862749999998" green="0.55294117649999996" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="LeG-c5-fay" secondAttribute="bottom" id="BPB-q7-VfW"/>
+                        <constraint firstItem="LeG-c5-fay" firstAttribute="top" secondItem="qjJ-1G-PpL" secondAttribute="top" id="KOP-mM-ps6"/>
+                        <constraint firstItem="rIq-SB-BhV" firstAttribute="centerX" secondItem="qjJ-1G-PpL" secondAttribute="centerX" id="Ofy-wQ-Eda"/>
+                        <constraint firstItem="lfj-Zt-U6K" firstAttribute="top" secondItem="qjJ-1G-PpL" secondAttribute="top" id="P8p-0M-gp4"/>
+                        <constraint firstItem="lfj-Zt-U6K" firstAttribute="leading" secondItem="qjJ-1G-PpL" secondAttribute="leading" id="RRT-aW-tEW"/>
+                        <constraint firstAttribute="bottom" secondItem="lfj-Zt-U6K" secondAttribute="bottom" id="X8K-Dg-WpV"/>
+                        <constraint firstItem="rIq-SB-BhV" firstAttribute="centerY" secondItem="qjJ-1G-PpL" secondAttribute="centerY" multiplier="0.95" id="c0l-xA-2Rv"/>
+                        <constraint firstAttribute="trailing" secondItem="LeG-c5-fay" secondAttribute="trailing" id="rDO-fS-PgE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="BtS-rg-pOh"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qjJ-1G-PpL" firstAttribute="centerX" secondItem="NkL-J1-sAy" secondAttribute="centerX" id="4Te-nJ-O5w"/>
+                <constraint firstItem="qjJ-1G-PpL" firstAttribute="trailing" secondItem="BtS-rg-pOh" secondAttribute="trailing" id="7q5-HI-pUL"/>
+                <constraint firstItem="qjJ-1G-PpL" firstAttribute="bottom" secondItem="BtS-rg-pOh" secondAttribute="bottom" id="AvS-7d-4LG"/>
+                <constraint firstItem="qjJ-1G-PpL" firstAttribute="leading" secondItem="BtS-rg-pOh" secondAttribute="leading" id="K9F-8v-uhk"/>
+                <constraint firstItem="qjJ-1G-PpL" firstAttribute="top" secondItem="NkL-J1-sAy" secondAttribute="top" id="SPJ-ne-nym"/>
+                <constraint firstItem="qjJ-1G-PpL" firstAttribute="centerY" secondItem="NkL-J1-sAy" secondAttribute="centerY" id="g7v-O5-zdG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnLeft" destination="lfj-Zt-U6K" id="CBY-bN-yvu"/>
+                <outlet property="btnRight" destination="LeG-c5-fay" id="UEN-aj-hft"/>
+                <outlet property="titleLbl" destination="rIq-SB-BhV" id="4fy-Sj-28m"/>
+            </connections>
+            <point key="canvasLocation" x="9.5" y="27"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_more_white" width="16" height="16"/>
+        <image name="left-arrow" width="512" height="512"/>
+        <image name="right-arrow" width="512" height="512"/>
+    </resources>
+</document>
